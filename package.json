@@ -1,0 +1,48 @@
+{
+  "name": "processosadv",
+  "version": "1.0.0",
+  "description": "uma api que registra processos abertos , em andamento e fechados",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/src/server.js",
+    "dev": "nodemon src/server.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --watch",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NinaS23/ProcessosAdv.git"
+  },
+  "author": "mariaschwarzdev@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NinaS23/ProcessosAdv/issues"
+  },
+  "homepage": "https://github.com/NinaS23/ProcessosAdv#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/joi": "^17.2.3",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.10.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "npm": "^10.2.4",
+    "ts-node": "^10.9.1"
+  }
+}
