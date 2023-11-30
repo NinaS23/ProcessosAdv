@@ -1,15 +1,15 @@
 {
-    "compilerOptions": {
-      "esModuleInterop": true,
-      "target": "es6",  
-      "module": "commonjs",  
-      "removeComments": true,
-      "moduleResolution": "node",
-          "outDir": "dist"
-    },
-    "ts-node": {
-      "esm": true
-    },
-    "include": ["src/**/*"]
-
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "target": "es6",
+    "module": "commonjs",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "outDir": "dist"
+  },
+  "ts-node": {
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"]
 }
