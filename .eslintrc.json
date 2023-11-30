@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "node": true 
     },
     "extends": [
         "eslint:recommended",
@@ -9,8 +10,8 @@
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        "ecmaVersion": 2021,
+        "sourceType": "script" 
     },
     "plugins": [
         "@typescript-eslint"
@@ -31,6 +32,10 @@
         "semi": [
             "error",
             "always"
+        ],
+        "@typescript-eslint/no-var-requires": [
+            "off"
         ]
+        
     }
 }
